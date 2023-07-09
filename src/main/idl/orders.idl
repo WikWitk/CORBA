@@ -1,0 +1,24 @@
+module pl {
+    module edu {
+        module pja {
+            module sri {
+                module wwitkowski {
+                    module zad06_corba_order {
+                      struct Order {
+                        long orderId;
+                        string clientName;
+                        sequence<string> products;
+                        double totalAmount;
+                      };
+                      interface OrderSystem{
+                          void addOrder(in Order order);
+                          void removeOrder(in long orderId);
+                          Order getOrderByID(in long orderId);
+                      };
+
+                    };
+                };
+            };
+        };
+    };
+};
